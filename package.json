@@ -1,0 +1,24 @@
+{
+  "name": "tp-cicd-starter",
+  "version": "1.0.0",
+  "description": "Industrialiser le déploiement d’une application web **locale** : 1) Conteneuriser l’app (Dockerfile) 2) Provisionner l’infra locale avec Terraform (provider Docker) 3) Automatiser le déploiement/config avec Ansible 4) Proposer une chaîne CI/CD (GitHub Actions ou simulation locale)",
+ "scripts": {
+    "docs:gen": "node scripts/build-workshop.mjs",
+    "docs:serve": "npm run docs:gen && moaw serve docs/evaluation/workshop.md",
+    "docs:build": "npm run docs:gen && moaw build docs/evaluation/workshop.md"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/othila-academy/terraform-ansible-evaluation.git"
+  },
+  "keywords": [],
+  "author": "Quentin Nicolle",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/othila-academy/terraform-ansible-evaluation/issues"
+  },
+  "homepage": "https://github.com/othila-academy/terraform-ansible-evaluation#readme",
+  "devDependencies": {
+    "@moaw/cli": "^1.5.1"
+  }
+}

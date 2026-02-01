@@ -9,8 +9,6 @@ Industrialiser le déploiement d’une application web **locale** :
 
 > ⚠️ Ce dépôt est un **starter**. Certaines parties sont volontairement incomplètes.
 
----
-
 ## Ce qui est fourni
 - Une application Flask minimale dans `app/` (**sans Dockerfile**).
 - Une structure d’infrastructure : `infra/terraform/`, `infra/ansible/`.
@@ -22,8 +20,6 @@ Industrialiser le déploiement d’une application web **locale** :
 - Ansible >= 2.15 (Windows : WSL2 recommandé)
 - Git
 
----
-
 ## Consignes de rendu
 - Tout doit être versionné (commits réguliers).
 - Aucune étape manuelle après lancement du déploiement automatisé.
@@ -34,7 +30,6 @@ Industrialiser le déploiement d’une application web **locale** :
   - vérification (healthcheck)
   - limites + améliorations
 
----
 
 ## Démarrage (app en local, sans Docker)
 ```bash
@@ -45,8 +40,6 @@ pip install -r requirements.txt
 python app.py
 # puis: curl http://localhost:5000/health
 ```
-
----
 
 ## À faire (checklist)
 ### 1) Docker
@@ -72,8 +65,6 @@ python app.py
 - [ ] GitHub Actions : build image + vérif + (optionnel) déploiement
   ou
 - [ ] Simulation locale documentée (script + README)
-
----
 
 ## Structure
 ```text
